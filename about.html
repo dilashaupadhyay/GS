@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Page</title>
+  <style>
+    /* Paste your CSS here */
+    .about-container {
+      text-align: center;
+      margin: 50px auto;
+      max-width: 600px;
+      color: #886161;
+      font-family: "Libre Baskerville", serif;
+      transition: 0.3s;
+      animation-name: slideLeftRight;
+      animation-duration: 12s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+    /* Define the keyframes for the animation */
+    @keyframes slideLeftRight {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(200px);
+      }
+    }
+    /* Additional styles for your HTML structure */
+    .about-image {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+    h1 {
+      font-family: "Libre Baskerville", serif;
+    }
+    h3 {
+      font-family: "Libre Baskerville", serif;
+    }
+  </style>
+</head>
+<body>
+  <div class="about-container">
+    <h1>About Us</h1>
+    <p>This is some information about us...</p>
+    <img class="about-image" src="your_image_url.jpg" alt="About Us Image">
+    <h3>Contact Us</h3>
+    <p>Reach out to us at example@email.com</p>
+  </div>
+</body>
+</html>
