@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    /* Paste your CSS here */
+    .login-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .h1 {
+      font-family: "Libre Baskerville", serif;
+    }
+
+    .login-image {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .login-image img {
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .h3 {
+      font: optional;
+    }
+
+    .login-form {
+      flex: 1;
+      max-width: 700px;
+      max-height: 1000px;
+      padding: 20px;
+    }
+
+    .login-form h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .login-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-form label {
+      margin: 10px 0 5px;
+      color: #000;
+    }
+
+    .login-form input {
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      border: 1px solid #000;
+      border-radius: 4px;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .login-form button {
+      background-color: #c88ea7;
+      color: #fff;
+      padding: 15px 15px;
+      font-family: "Libre Baskerville", serif;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .login-options {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .login-options p {
+      margin-bottom: 15px;
+      color: #000;
+    }
+
+    .login-options li {
+      list-style: none;
+      color: #c88ea7;
+    }
+
+    .color {
+      margin-bottom: 15px;
+      color: #c88ea7;
+      text-decoration: underline;
+    }
+
+    .color p {
+      color: #c88ea7;
+    }
+
+    .google-sign-in .google-button-container {
+      display: flex;
+      align-items: center;
+      font-family: "Libre Baskerville", serif;
+      margin-top: 20px;
+    }
+
+    .google-sign-in button {
+      background-color: #ffffff;
+      color: #c88ea7;
+      padding: 10px 10px;
+      font-size: 16px;
+      border: 1px solid #000;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .login-options a {
+      text-decoration: none;
+      color: #c88ea7;
+    }
+
+    .google-sign-in button:hover {
+      background-color: #ffffff;
+      border-color: #000;
+    }
+
+    .google-sign-in .google-logo {
+      margin-left: 10px;
+      border-color: #000;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      color: #c88ea7;
+    }
+
+    .form-input {
+      padding: 15px 15px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      border: 1px solid #c88ea7;
+      border-radius: 4px;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      color: #c88ea7;
+    }
+
+    .form-input button:hover {
+      border-color: #fff;
+      background-color: #ffffff;
+      color: #c88ea7;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-image">
+      <img src="your_image_url.jpg" alt="Login Image">
+    </div>
+    <div class="login-form">
+      <h2>Login Form</h2>
+      <form>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password">
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <div class="login-options">
+        <p>Other options:</p>
+        <ul>
+          <li><a href="#">Forgot password?</a></li>
+          <li><a href="#" class="color">Sign up</a></li>
+        </ul>
+      </div>
+      <div class="google-sign-in">
+        <div class="google-button-container">
+          <button>Sign in with Google</button>
+          <img class="google-logo" src="google_logo.png" alt="Google Logo">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
