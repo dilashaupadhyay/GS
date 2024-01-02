@@ -3,35 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <title>Landing Page</title>
-  <link rel="stylesheet" href="LandingPage.css">
   <style>
-    /* Additional or inline styles can be added here */
+   /* LandingPage.css */
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  font-family: "Libre Baskerville", serif;
+  animation: slideInDown 1s ease;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #c88ea7;
+  font-family: "Libre Baskerville", serif;
+  animation: fadeInUp 1.5s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  animation: scaleIn 2s ease;
+  max-width: 20;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+p {
+  font-family: "Kenia", sans-serif;
+  font-family: "Libre Baskerville", serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  animation: fadeIn 2s ease;
+}
+
+.prass {
+  opacity: auto;
+}
+
+.social {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.social a {
+  color: #a73535;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social a:hover {
+  color: #080909;
+}
+
+.landi {
+  max-width: 600px;
+  height: 500px;
+}
+
+.login button {
+  color: black;
+  text-align: center;
+  padding: 1px 15px;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+  width: fit-content;
+  height: 30px;
+  top: 0%;
+  left: 850%;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+  animation: fadeIn 2s ease;
+}
+
+
   </style>
 </head>
 <body>
-
-<div class="container">
-  <div class="centered">
-    <h1>Welcome</h1>
-    <h2>Explore Something Amazing</h2>
+  <div class="container">
+    <div class="centered">
+      <h1>Welcome to Our Page</h1>
+      <h2>Discover Amazing Things</h2>
+      <div class="images">
+        <img class="landi" src="your-image-path.jpg" alt="Description of Image">
+        <!-- Replace 'your-image-path.jpg' with the path to your image -->
+      </div>
+      <p>Your text goes here...</p>
+      <div class="social">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div class="login">
+        <button>Log In</button>
+      </div>
+    </div>
   </div>
-  
-  <div class="images">
-    <img class="landi" src="path_to_your_image.jpg" alt="Your Image">
-  </div>
-  
-  <p>Your text goes here...</p>
-  
-  <div class="social">
-    <a href="#">Facebook</a>
-    <a href="#">Twitter</a>
-    <a href="#">Instagram</a>
-  </div>
-  
-  <div class="login">
-    <button>Log In</button>
-  </div>
-</div>
-
 </body>
 </html>
