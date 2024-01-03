@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Form</title>
+  <style>
+    /* Paste the provided CSS here */
+    .edit-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .edit-form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .edit-form label {
+      display: block;
+      margin: 10px 0;
+      color: #c88ea7;
+    }
+
+    .edit-form input {
+      padding: 10px;
+      margin-bottom: 15px;
+      font-size: 16px;
+      border: 1px solid #c88ea7;
+      border-radius: 4px;
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      color: #c88ea7;
+    }
+
+    .edit-options {
+      margin-top: 20px;
+    }
+
+    .edit-form button {
+      background-color: #c88ea7;
+      color: #fff;
+      padding: 15px;
+      font-family: "Libre Baskerville", serif;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .edit-form button a {
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="edit-container">
+    <form class="edit-form" action="/submit" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email">
+
+      <div class="edit-options">
+        <button type="submit">Submit</button>
+        <button type="button"><a href="#">Cancel</a></button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
