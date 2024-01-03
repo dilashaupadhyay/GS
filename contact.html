@@ -52,13 +52,24 @@
       max-width: 100%;
       height: 500px;
       margin-bottom: 20px;
-      animation: slideInDown 1s forwards;
-    }
+      
+      animation: slideDownAnimation 1s ease-in-out forwards; /* Animation for slide down */
+}
+
+@keyframes slideDownAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-50px); /* Move the element upward */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Element returns to its original position */
+  }
     form {
       margin-bottom: 20px;
       opacity: 0;
       animation: fadeInUp 1s forwards 0.5s;
-    }
+    }}
     /* Footer styles */
     .footer {
       display: flex;
@@ -89,17 +100,8 @@
     .section span {
       margin-right: 5px;
     }
-    /* Animations */
-    @keyframes slideInDown {
-      from {
-        transform: translateY(-100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
+    
+    
     .social {
         display: flex;
         flex-direction: row;
@@ -168,7 +170,7 @@
   <!-- Contact Page Content -->
   <div class="contact-container">
     <h1> Contact Us</h1>
-    <img class="contact-img animate__animated animate__slideInDown" src="images/contact.png" alt="Contact Image" />
+    <img class="contact-img animate__animated " src="images/contact.png" alt="Contact Image" />
     <form>
       <label for="message">Message:</label>
       <textarea id="message" name="message" rows="4" placeholder="Enter your message..."></textarea>
