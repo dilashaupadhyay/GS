@@ -40,9 +40,26 @@
     }
 
     
-.landi{
+    @keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.landi-image {
+  max-width: 100%;
+  height: auto;
+  animation: fadeInAnimation 2s ease-in-out forwards;
+}
+
+.landi {
   color: #c88ea7;
   text-align: center;
+  opacity: 0;
+  animation: fadeInAnimation 2s ease-in-out forwards 0.5s;
 }
 
       .social {

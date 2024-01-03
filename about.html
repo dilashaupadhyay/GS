@@ -64,6 +64,7 @@
         max-width: 100%;
         height: auto;
         margin-top: 20px;
+        animation: fadeInUp 1s ease-in-out;
       }
       h1 {
         font-family: "Libre Baskerville", serif;
@@ -71,58 +72,26 @@
       h3 {
         font-family: "Libre Baskerville", serif;
       }
-      .about-container {
-        text-align: center;
-        margin: 50px auto;
-        max-width: 600px;
-        color: #886161;
-        font-family: "Libre Baskerville", serif;
-        transition: 0.3s;
-        animation-name: slideLeftRight; /* Name of the animation */
-        animation-duration: 12s; /* Duration of the animation */
-        animation-timing-function: ease-in-out; /* Timing for smooth motion */
-        animation-iteration-count: infinite; /* Make the animation infinite/continuous */
-      }
-
-      /* Define the keyframes for the animation */
-      @keyframes slideLeftRight {
-        0%,
-        100% {
-          transform: translateX(0); /* Starting and ending position */
-        }
-        50% {
-          transform: translateX(200px); /* Middle position (move right) */
-        }
-      }
+     
+   
 
       .about-container {
-        text-align: center;
-        margin: 50px auto;
-        max-width: 600px;
-        color: #886161;
-        font-family: "Libre Baskerville", serif;
-        transition: 0.3s;
-        animation-name: slideLeftRight;
-        animation-duration: 12s;
-        animation-timing-function: ease-in-out;
-        animation-iteration-count: infinite;
-      }
-      /* Define the keyframes for the animation */
-      @keyframes slideLeftRight {
-        0%,
-        100% {
-          transform: translateX(0);
-        }
-        50% {
-          transform: translateX(200px);
-        }
-      }
-      /* Additional styles for your HTML structure */
-      .about-image {
-        max-width: 100%;
-        height: auto;
-        margin-top: 20px;
-      }
+  text-align: center;
+  margin: 50px auto;
+  max-width: 600px;
+  color: #886161;
+  font-family: "Libre Baskerville", serif;
+  transition: 0.3s;
+  animation-name: slideLeftRight;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+
+    
+    
       h1 {
         font-family: "Libre Baskerville", serif;
       }
@@ -192,9 +161,18 @@
         <li class="login-link"><a href="./login.html">Login</a></li>
       </ul>
     </nav>
-    <div class="about-container">
-      <h1>About Us</h1>
-      <img class="about-image" src="images/about.png" alt="About Us Image" />
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+<!-- Your HTML content -->
+<div class="about-container">
+  <h1>About Us</h1>
+  <img class="about-image animate__animated animate__slideInDown" src="images/about.png" alt="About Us Image" />
+</div>
+
+     
     </div>
     <footer class="footer">
       <div class="section">
